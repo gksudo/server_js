@@ -65,15 +65,12 @@ const objectify = data => {
 		title = title.substr(title.indexOf(" ") + 1);
 	}
 
-	
 	let song = {
 		artist: artist,
 		album: album,
 		filename: filename,
 		title: title
 	}
-
-	// console.log(song);
 
 
 	return song;
