@@ -3,7 +3,7 @@ This was built in conjunction with a music player app written in react native th
 The design was based around music downloaded from iTunes & has only been tested to run on node clients using `socket.io-client`.
 
 ## Usage
-After you clone the project, `cd` into the directory. The program takes an argument that's the filepath of the directory where all the music lives. On connection, it sends a `handshake` event as a confirmation (sanity testing), and then waits for a `refresh` event to then perform the indexing & serving of the files.
+After you clone the project, `cd` into the directory. The program takes an argument that's the filepath of the directory where all the music lives. On connection, it emits a `handshake` event as a confirmation (sanity testing), and then waits for a `refresh` event to then perform the indexing & serving of the files.
 
 to run:
 `node server.js "/path/to/library/"`
