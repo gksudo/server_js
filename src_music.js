@@ -61,9 +61,11 @@ const objectify = data => {
 	let filename = object[2];
 	let title = filename.substr(0, filename.lastIndexOf('.'));
 
+
 	if (!isNaN(title.split(' ')[0])) {
 		title = title.substr(title.indexOf(" ") + 1);
 	}
+
 
 	let song = {
 		artist: artist,
